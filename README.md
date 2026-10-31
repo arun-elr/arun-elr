@@ -1,7 +1,7 @@
 <h1 align="center">Hi, I'm Arunkumar Eli</h1>
 
 <p align="center">
-  <strong>Inference @ Meta</strong> · San Francisco<br>
+  <strong>Real-time inference @ Meta Superintelligence Labs</strong> · San Francisco<br>
   Real-time multimodal inference: CUDA graphs, batching and KV cache under memory pressure, and the RL and robotics stacks that run on them
 </p>
 
@@ -9,7 +9,13 @@
 
 ### About me
 
-I work on model inference at Meta. Before that I ran distributed training infrastructure at WaveForms AI and owned platform, cloud and security at Kumo, and was on the founding infrastructure and security teams at Armorblox, Grainite and Lacework.
+I work on real-time inference at Meta Superintelligence Labs, which I joined through the WaveForms AI acquisition. I built the real-time inference stack behind full-duplex voice in Muse Realtime Voice ([Bringing Your Muse to Life](https://research.meta.ai/blog/bringing-your-muse-to-life)).
+
+Before that:
+
+- **WaveForms AI:** distributed training infrastructure for 1,000+ GPUs across data centers.
+- **Kumo** (acquired by NVIDIA): platform, cloud and security for Graph ML, on-prem and SaaS.
+- **Founding teams** at Armorblox (acquired by Cisco), Grainite (acquired by MongoDB) and Lacework: infrastructure, security and compliance.
 
 In open source I work on serving performance and correctness: finding where a model's time goes on the GPU, removing launch and copy overhead, and showing the outputs stay the same. Perf claims come with A/B runs on H100, H200 or B200 and quality checks (WER, speaker similarity, closed-loop success rates, bit-identical outputs).
 
