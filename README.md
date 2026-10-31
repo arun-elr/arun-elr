@@ -17,7 +17,7 @@ Before that:
 - **Kumo** (acquired by NVIDIA): platform, cloud and security for Graph ML, on-prem and SaaS.
 - **Founding teams** at Armorblox (acquired by Cisco), Grainite (acquired by MongoDB) and Lacework: infrastructure, security and compliance.
 
-In open source I work on inference engines end to end: CUDA-graph capture and piecewise replay, continuous and dynamic batching, paged KV-cache admission and eviction under memory pressure, zero-copy tensor transport between workers over shared-memory arenas and Mooncake RDMA, tensor-parallel lockstep execution, and control-plane hardening. Every perf change ships with A/B runs on H100, H200 or B200 and numerical parity against the eager path.
+In open source I work on inference engines end to end: CUDA-graph capture and piecewise replay, continuous and dynamic batching, paged KV-cache admission and eviction under memory pressure, zero-copy tensor transport between workers over shared-memory arenas and Mooncake RDMA, tensor-parallel lockstep execution, and control-plane hardening.
 
 ### M\*, the multimodal inference engine
 
