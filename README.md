@@ -21,7 +21,7 @@ In open source I work on serving performance and correctness: finding where a mo
 
 ### M\*, the multimodal inference engine
 
-Core contributor to [M\*](https://github.com/mstar-project/mstar): **167 merged PRs** and **150 issues** filed.
+Core contributor to [M\*](https://github.com/mstar-project/mstar): **187 PRs** authored (**167 merged**) and **150 issues** filed.
 
 - **Performance:** 2.3x faster streaming Wan VAE decode ([#425](https://github.com/mstar-project/mstar/pull/425)) and 1.74x on Wan 2.2 with the same decoder ([#437](https://github.com/mstar-project/mstar/pull/437)); Qwen3-Omni streams audio after 12 frames instead of 25 ([#443](https://github.com/mstar-project/mstar/pull/443)); faster first audio for VoxCPM2 and Qwen3-TTS through CUDA-graph capture ([#659](https://github.com/mstar-project/mstar/pull/659), [#661](https://github.com/mstar-project/mstar/pull/661)); no per-step host sync in the denoise loops of Cosmos3, Wan 2.2 and OmniVoice ([#453](https://github.com/mstar-project/mstar/pull/453)).
 - **Batching and KV cache under memory pressure:** a refused admit unwinds exactly what it reserved ([#561](https://github.com/mstar-project/mstar/pull/561)), the engine recovers without stranding requests ([#560](https://github.com/mstar-project/mstar/pull/560)), and a refused batch retries smaller when nothing can be evicted ([#651](https://github.com/mstar-project/mstar/pull/651)). A full `/dev/shm`, a late message or one failed request no longer takes down the server or the batch ([#546](https://github.com/mstar-project/mstar/pull/546), [#557](https://github.com/mstar-project/mstar/pull/557), [#559](https://github.com/mstar-project/mstar/pull/559)).
