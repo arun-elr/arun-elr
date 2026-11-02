@@ -2,7 +2,7 @@
 
 <p align="center">
   <strong>Real-time inference @ Meta Superintelligence Labs</strong> · San Francisco<br>
-  Real-time multimodal inference: CUDA graphs, batching and KV cache under memory pressure, and the RL and robotics stacks that run on them
+  Distributed Inference / Training | RL | Robotics
 </p>
 
 ---
