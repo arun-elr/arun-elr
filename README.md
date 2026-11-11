@@ -85,3 +85,13 @@ In open source I work on inference engines end to end: CUDA-graph capture and pi
   <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white"/>
   <img src="https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge&logo=prometheus&logoColor=white"/>
 </p>
+
+---
+
+### Portfolio
+
+**[retrolm.xyz](https://retrolm.xyz)** — small fine-tuned models for single-step retrosynthesis, and the stack that serves them.
+
+On 500 held-out USPTO-50K reactions, a 1.7B with test-time augmentation reaches 56.0% top-1 and 93.0% top-10, against 53.6% and 85.2% for Claude Opus 5.5 at medium reasoning: top-10 significantly ahead (p < 0.0001), top-1 not a significant difference (p = 0.30). A 0.6B answers in 0.21 s at $0.07 per 1,000 molecules, 23 to 90 times faster per request and 110 to 900 times cheaper than the frontier models it is measured against. Given the same training data at inference, where the LLMs may search all 40,008 training reactions while answering, the 1.7B is still ahead on top-10 (92.8% against 90.0%) at about 23 times lower cost. Evaluation is exact-match on the same reactions for every model, with training-overlap checks.
+
+The playground serves those weights on Kubernetes: a FastAPI gateway streaming one-step proposals over SSE from vLLM and SGLang, Redis for caching, rate limits and the route queue, and a planner worker running Retro* search over a 23M-compound building-block stock, streaming every expansion back to the page. The published benchmark is open; running models live is invite-only.
